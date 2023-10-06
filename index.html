@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Only one viewport meta tag is needed, so I've removed the duplicate. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>No Undo Sketch App</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -15,9 +15,11 @@
         <label for="brushSize">Brush size:</label>
         <input type="range" id="brushSize" min="1" max="50" value="5">
     </div>
-    <canvas id="drawingCanvas" width="800" height="600"></canvas>
-    ...
-<button id="saveBtn">Save Drawing</button>
+    
+    <!-- I've removed the fixed width and height for the canvas since we're setting it dynamically in the JS -->
+    <canvas id="drawingCanvas"></canvas>
+    
+    <button id="saveBtn">Save Drawing</button>
 
     <script src="script.js"></script>
 </body>
