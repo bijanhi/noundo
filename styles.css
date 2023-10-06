@@ -9,9 +9,8 @@ body {
 canvas {
     border: 1px solid black;
     width: 100%;
-    display: block;  / Ensures the canvas doesn't behave like an inline-block element.
+    display: block;  /* Ensures the canvas doesn't behave like an inline-block element. */
 }
-
 
 .controls {
     display: flex;
