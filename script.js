@@ -1,6 +1,11 @@
 const canvas = document.getElementById('drawingCanvas');
 const ctx = canvas.getContext('2d');
 
+const canvas = document.getElementById('drawingCanvas');
+canvas.width = canvas.offsetWidth;
+canvas.height = canvas.offsetHeight;
+const ctx = canvas.getContext('2d');
+
 let drawing = false;
 
 // Mouse event listeners
