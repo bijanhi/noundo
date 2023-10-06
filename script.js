@@ -3,7 +3,7 @@ canvas.width = canvas.offsetWidth;
 canvas.height = canvas.offsetHeight;
 const ctx = canvas.getContext('2d');
 
-let drawing = false;
+let drawing = true;
 
 // Mouse event listeners
 canvas.addEventListener('mousedown', startDrawing);
