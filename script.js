@@ -13,6 +13,15 @@ canvas.addEventListener('touchstart', startDrawing, false);
 canvas.addEventListener('touchend', stopDrawing, false);
 canvas.addEventListener('touchmove', drawTouch, false);
 
+// save button
+document.getElementById('saveBtn').addEventListener('click', function() {
+    const link = document.createElement('a');
+    link.href = canvas.toDataURL('image/png'); // Creates a PNG image of the canvas content
+    link.download = 'drawing.png';
+    link.click();
+});
+
+
 const colorPicker = document.getElementById('colorPicker');
 const brushSize = document.getElementById('brushSize');
 
