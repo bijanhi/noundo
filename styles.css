@@ -17,4 +17,8 @@ canvas {
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
+
+    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape mode */
+    -ms-text-size-adjust: 100%; /* For IE and Edge */
+    -webkit-overflow-scrolling: touch; /* Enables smoother scrolling in iOS */
 }
