@@ -12,9 +12,6 @@ canvas {
     display: block;  // Ensures the canvas doesn't behave like an inline-block element.
 }
 
-}
-
-}
 
 .controls {
     display: flex;
