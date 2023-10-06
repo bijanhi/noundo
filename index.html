@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+   <div class="app-container">
     <div class="controls">
         <label for="colorPicker">Color:</label>
         <input type="color" id="colorPicker" value="#000000">
@@ -15,10 +16,8 @@
         <label for="brushSize">Brush size:</label>
         <input type="range" id="brushSize" min="1" max="50" value="5">
     </div>
-    
-    <!-- I've removed the fixed width and height for the canvas since we're setting it dynamically in the JS -->
     <canvas id="drawingCanvas"></canvas>
-    
+</div>
     <button id="saveBtn">Save Drawing</button>
 
     <script src="script.js"></script>
