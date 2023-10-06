@@ -6,17 +6,23 @@ body {
     background-color: #f7f7f7;
 }
 
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 canvas {
     border: 1px solid black;
     width: 100%;
-    display: block;  /* Ensures the canvas doesn't behave like an inline-block element. */
+    max-width: 800px; /* You can adjust this as per your requirements */
+    display: block;
 }
 
 .controls {
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
-
     -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape mode */
     -ms-text-size-adjust: 100%; /* For IE and Edge */
     -webkit-overflow-scrolling: touch; /* Enables smoother scrolling in iOS */
